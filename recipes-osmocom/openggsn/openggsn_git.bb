@@ -4,10 +4,13 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=8ca43cbc842c2336e835926c2166c28b"
 PV = "0.91+gitr${SRCPV}"
 PR = "r14"
 
-SRCREV = "b07d07072e70ac4f920be9dfdf45615193b4ec2d"
-SRC_URI = "git://git.osmocom.org/openggsn                   \
-           file://openggsn.init                             \
-	   file://libgtp-queue_depth_32.patch		    \
+# SRCREV = "b07d07072e70ac4f920be9dfdf45615193b4ec2d"
+# SRC_URI = "git://git.osmocom.org/openggsn"
+
+SRCREV = "eb11973ea3f3ddf33d648f50bbc38e27e6553e1d"
+SRC_URI = "git://git@github.com/RoadRunnr/openggsn.git;protocol=ssh;branch=osmo-ggsn          \
+           file://openggsn.init                             		     		      \
+	   file://libgtp-queue_depth_32.patch		    		     		      \
           "
 S = "${WORKDIR}/git"
 

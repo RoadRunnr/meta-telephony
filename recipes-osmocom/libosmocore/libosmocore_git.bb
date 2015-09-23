@@ -1,5 +1,7 @@
 require ${PN}.inc
 
+DEFAULT_PREFERENCE = "-1"
+
 S = "${WORKDIR}/git"
 SRCREV = "c1cb75eff5b060da9e6d43521e4913a8bf4e74fc"
 SRC_URI = "git://git.osmocom.org/libosmocore.git;protocol=git"
